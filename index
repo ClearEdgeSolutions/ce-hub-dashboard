@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CE HUB</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+      display: flex;
+    }
+    .sidebar {
+      width: 220px;
+      background: black;
+      color: white;
+      height: 100vh;
+      padding: 20px;
+    }
+    .main {
+      flex: 1;
+      background: #f4f4f4;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="sidebar">
+  <h2>CE HUB</h2>
+  <p>Dashboard</p>
+  <p>Projects</p>
+  <p>Contractors</p>
+</div>
+
+<div class="main">
+  <h2>Admin Dashboard</h2>
+
+  <div class="card">
+    <strong>Cliente A</strong><br>
+    Status: New Lead
+  </div>
+
+  <div class="card">
+    <strong>Cliente B</strong><br>
+    Status: Walkthrough
+  </div>
+
+  <div class="card">
+    <strong>Cliente C</strong><br>
+    Status: Partner Matching
+  </div>
+
+</div>
+
+</body>
+</html>
