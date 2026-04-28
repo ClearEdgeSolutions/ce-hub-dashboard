@@ -7249,6 +7249,31 @@ manualApplicantBtn?.addEventListener("click", () => {
   };
 })();
 </script>
+  async function createLeadFromHub() {
+  await fetch("/.netlify/functions/create-lead", {
+    method: "POST",
+    headers: {"Content-Type": "application/json"},
+    body: JSON.stringify({
+      name: "Manual Lead",
+      email: "test@test.com"
+    })
+  });
+
+  location.reload();
+}
+
+async function updateLeadStatus(id, status) {
+  await fetch("/.netlify/functions/update-lead", {
+    method: "POST",
+    headers: {"Content-Type": "application/json"},
+    body: JSON.stringify({
+      id,
+      updates: { status }
+    })
+  });
+
+  location.reload();
+}
 
 </body>
 </html>
